@@ -10,14 +10,16 @@ import globals from "globals";
 export default [
   { files: ["**/*.{js,mjs,cjs,jsx}"] },
   {
-    languageOptions: { globals: globals.browser },
     ignores: [
       "**/node_modules/**",
-      "dist/**",
+      "dist/**/*",
       "coverage/**",
       "*.config.js",
       "src/generated/**",
     ],
+  },
+  {
+    languageOptions: { globals: globals.browser },
   },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
