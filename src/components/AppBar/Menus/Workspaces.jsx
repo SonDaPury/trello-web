@@ -1,10 +1,10 @@
-import * as React from "react";
+import { PersonAdd, Settings, Logout } from "@mui/icons-material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box, ListItemIcon } from "@mui/material";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Box, ListItemIcon } from "@mui/material";
-import { PersonAdd, Settings, Logout } from "@mui/icons-material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import * as React from "react";
 
 const Workspaces = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);

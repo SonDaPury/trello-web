@@ -1,6 +1,6 @@
-import * as React from "react";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import Logout from "@mui/icons-material/Logout";
+import PersonAdd from "@mui/icons-material/PersonAdd";
+import Settings from "@mui/icons-material/Settings";
 import {
   Avatar,
   Box,
@@ -9,9 +9,9 @@ import {
   ListItemIcon,
   Tooltip,
 } from "@mui/material";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import * as React from "react";
 
 const Profiles = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);

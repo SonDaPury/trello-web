@@ -1,5 +1,5 @@
-import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import SettingsBrightnessIcon from "@mui/icons-material/SettingsBrightness";
 import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import { useColorScheme } from "@mui/material/styles";

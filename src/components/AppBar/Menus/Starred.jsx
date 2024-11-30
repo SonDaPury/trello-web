@@ -1,10 +1,10 @@
-import * as React from "react";
+import Check from "@mui/icons-material/Check";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box, Divider, ListItemIcon, ListItemText } from "@mui/material";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Box, Divider, ListItemIcon, ListItemText } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Check from "@mui/icons-material/Check";
+import * as React from "react";
 
 const Starred = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);

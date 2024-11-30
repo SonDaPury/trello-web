@@ -1,3 +1,9 @@
+import AppsIcon from "@mui/icons-material/Apps";
+import CloseIcon from "@mui/icons-material/Close";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Badge,
   Box,
@@ -6,22 +12,18 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import ModeSelect from "~/components/ModeSelect";
-import AppsIcon from "@mui/icons-material/Apps";
 import SvgIcon from "@mui/material/SvgIcon";
-import { ReactComponent as TrelloIcon } from "~/assets/images/trello.svg";
-import Workspaces from "./Menus/Workspaces";
+import Tooltip from "@mui/material/Tooltip";
+import { useState } from "react";
+
+import Profiles from "./Menus/Profiles";
 import Recent from "./Menus/Recent";
 import Starred from "./Menus/Starred";
 import Templates from "./Menus/Templates";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import Tooltip from "@mui/material/Tooltip";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import Profiles from "./Menus/Profiles";
-import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
-import SearchIcon from "@mui/icons-material/Search";
-import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+import Workspaces from "./Menus/Workspaces";
+
+import { ReactComponent as TrelloIcon } from "~/assets/images/trello.svg";
+import ModeSelect from "~/components/ModeSelect";
 
 const AppBar = () => {
   const [searchValue, setSearchValue] = useState("");
