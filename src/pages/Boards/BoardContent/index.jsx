@@ -1,7 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import * as React from "react";
 
-const COLUMN_HEADER_HEIGHT = "50px";
-const COLUMN_FOOTER_HEIGHT = "50px";
+import ListColumns from "./ListColumns/ListColumns";
 
 const BoardContent = () => {
   return (
@@ -10,45 +10,11 @@ const BoardContent = () => {
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
         width: "100%",
-        display: "flex",
         height: (theme) => theme.trello.boardContentHeight,
+        p: "10px 0",
       }}
     >
-      <Box
-        sx={{
-          minWidth: "300px",
-          maxWidth: "300px",
-          bgcolor: (theme) =>
-            theme.palette.mode === "dark" ? "#333643" : "#ebecf0",
-          ml: 2,
-          borderRadius: "6px",
-        }}
-      >
-        <Box
-          sx={{
-            height: COLUMN_HEADER_HEIGHT,
-            p: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <Typography>Column Title</Typography>
-          <Box></Box>
-        </Box>
-        <Box sx={{}}>List card</Box>
-        <Box
-          sx={{
-            height: COLUMN_FOOTER_HEIGHT,
-            p: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          Footer
-        </Box>
-      </Box>
+      <ListColumns />
     </Box>
   );
 };
