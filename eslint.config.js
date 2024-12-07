@@ -79,6 +79,7 @@ export default [
       "no-continue": "warn",
       "vars-on-top": "warn",
       "no-use-before-define": ["warn", { variables: true }],
+      "react/prop-types": "off",
     },
   },
   eslintPluginPrettierRecommended,

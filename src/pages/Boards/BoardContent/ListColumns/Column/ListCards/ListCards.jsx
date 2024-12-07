@@ -25,6 +25,7 @@ function ListCards() {
       }}
     >
       <Card />
+      <Card temporaryHideMedia />
     </Box>
   );
 }

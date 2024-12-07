@@ -11,7 +11,23 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function Card() {
+function Card({ temporaryHideMedia }) {
+  if (temporaryHideMedia) {
+    return (
+      <MuiCard
+        sx={{
+          cursor: "pointer",
+          boxShadow: "0 1px 1px rgba(0,0,0,0.2)",
+          overflow: "unset",
+        }}
+      >
+        <CardContent sx={{ p: 1.5, "&:last-child": { p: 1.5 } }}>
+          <Typography>Card test 01</Typography>
+        </CardContent>
+      </MuiCard>
+    );
+  }
+
   return (
     <MuiCard
       sx={{
