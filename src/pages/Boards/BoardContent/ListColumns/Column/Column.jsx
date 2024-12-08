@@ -20,7 +20,7 @@ import React from "react";
 
 import ListCards from "./ListCards/ListCards";
 
-function Column() {
+function Column({ column }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -63,7 +63,7 @@ function Column() {
               fontSize: "1rem",
             }}
           >
-            Column Title
+            {column?.title}
           </Typography>
           <Box>
             <Tooltip title="More options">

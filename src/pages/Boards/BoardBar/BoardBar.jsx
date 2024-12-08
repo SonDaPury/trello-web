@@ -6,6 +6,8 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import VpnLockIcon from "@mui/icons-material/VpnLock";
 import { Avatar, AvatarGroup, Box, Button, Chip, Tooltip } from "@mui/material";
 
+import { BOARD_TYPE_TEXT } from "~/utils/constants";
+
 const MENU_STYLES = {
   color: "white",
   bgcolor: "transparent",
@@ -17,7 +19,7 @@ const MENU_STYLES = {
   },
 };
 
-const BoardBar = () => {
+const BoardBar = ({ board }) => {
   return (
     <Box
       sx={{
@@ -38,14 +40,17 @@ const BoardBar = () => {
           sx={MENU_STYLES}
           clickable
           icon={<DashboardIcon />}
-          label="Mern Stack"
+          label={board?.title}
         />
-        <Chip
-          sx={MENU_STYLES}
-          clickable
-          icon={<VpnLockIcon />}
-          label="Public/Private Workspace"
-        />
+        {board?.type && (
+          <Chip
+            sx={MENU_STYLES}
+            clickable
+            icon={<VpnLockIcon />}
+            label={BOARD_TYPE_TEXT[board?.type]}
+          />
+        )}
+
         <Chip
           sx={MENU_STYLES}
           clickable

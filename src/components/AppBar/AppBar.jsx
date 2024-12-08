@@ -23,7 +23,7 @@ import Templates from "./Menus/Templates";
 import Workspaces from "./Menus/Workspaces";
 
 import { ReactComponent as TrelloIcon } from "~/assets/images/trello.svg";
-import ModeSelect from "~/components/ModeSelect";
+import ModeSelect from "~/components/ModeSelect/ModeSelect";
 
 const AppBar = () => {
   const [searchValue, setSearchValue] = useState("");
